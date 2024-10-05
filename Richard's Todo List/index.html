@@ -1,0 +1,51 @@
+<!-- * To update to a current version of html -> Html 5 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <link rel="icon" href="./pics/My_DOUGNUT.jpg">
+
+  <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Richard's Todo list</title>
+</head>
+<body class="space">
+
+  <header>
+    <div  class="togged">
+      <button title="Switch modes" class="rug" ondblclick="
+      smoother();
+      " onclick="
+      smooth();
+        "></button>
+    </div>
+  </header>
+  
+  <div class="right">
+  <!-- * This where the semantic for the tasks are written down -->
+  <main class="center">
+
+    <!-- * This is where all the things to be done fpr the day are typed -->
+    <input class="input" type="text" placeholder="What are your plan for today?">
+
+    <!-- * The button pushes the Todo to the an empty array -->
+    <button onclick="
+    empty();
+    " class="release styled ">Push</button>
+    <button class="clearit styled" onclick="
+    Removeit();
+    ">Clear Storage</button>
+  </main>
+
+  <!-- * This is where the todo's are pushed to -->
+  <section class="stored case">
+    
+  </section>
+</div>
+</body>
+<script src="main/app.js"></script>
+<script>
+
+</script>
+</html>

@@ -1,0 +1,188 @@
+/*! Global Presets  */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body{
+  background-color: #28231C; 
+  transition: all 0.4s ease-in-out;
+}
+
+header{
+  background-color: #57332117;
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  width: 100%;
+  height: 100px;
+}
+
+.center{
+  display: flex;
+  /*! Row is always is always the default */
+  flex-direction: row;
+  column-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+}
+
+.input{
+  padding: 20px 10px;
+  width: 300px;
+opacity: 0.5;
+}
+
+.styled{
+  padding: 20px;
+  border: none;
+  background-color: #F1Ab8620;
+  font-weight: bolder;
+color: #fff;
+text-transform: uppercase;
+}
+
+.same{
+  display: flex;
+  row-gap: 10px;
+  column-gap: 10px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.case{
+  max-width: 300px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #c57b57;
+  margin-top: 100px;
+  max-width: fit-content;
+  padding: 100px;
+  text-transform: uppercase;
+  color: #3f0d12;
+  border-radius: 1rem;
+}
+
+.same button{
+  padding: 20px;
+  border: 0;
+  background-color: rgba(230, 230, 230, 0.5);
+}
+
+.right{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  padding: 5px;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap-reverse;
+}
+
+hr{
+  border-bottom: 0;
+  max-width: 100px;
+  text-decoration: none;
+}
+
+.torus{
+  width: 80px;
+  animation:  circles 0.9s linear infinite;
+  border-right: 2px solid rgb(105, 4, 4);
+  border-radius: 40px;
+  height: 80px;
+  color: transparent;
+  background-color: transparent;
+}
+
+@keyframes circles {
+  0%{
+    transform: rotate(0);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+.tor{
+  width: 80px;
+  animation:  circles 0.9s linear infinite;
+  border-right: 2px solid rgb(230, 160, 9);
+  border-radius: 40px;
+  height: 80px;
+  color: transparent;
+  background-color: transparent;
+}
+
+
+.togged{
+  background-color: #835037;
+  width: 100px;
+  height: 50px;
+  border-radius: 50px;
+  position: relative;
+}
+
+.rug{
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  margin-top: 10%;
+  position: absolute;
+  padding: 5px;
+  top: -5px;
+  right: 9px;
+  border-radius: 15rem;
+  border: none;
+  background-color: rgba(230, 230, 230,0.9);
+   box-shadow: 0 0 5px 0 #28231C,
+   0 0 10px 0 #28231C,
+   0 0 15px 0 #79674d
+   ;
+  transition: all 0.4s ease-in-out;
+}
+
+@keyframes slide {
+  0%{
+  opacity: 0;  
+  }
+  100%{
+    opacity: 0.7;
+    transform: translate(-15px);
+  }
+} 
+
+.smudgre{
+  transition: all 0.4s ease-in-out;
+  transform: translate(0);
+  background-color: rgba(230, 230, 230,0.9);
+}
+.smudge{
+  transition: all 0.4s ease-in-out;
+  transform: translate(-39px);
+  background-color: #28231C;
+}
+
+.space{
+  transition: all 1s ease-in-out;
+  background-color: rgb(230, 230, 230);
+  color: rgb(230, 230, 230);
+}
+
+.same{
+animation: slide 0.35s ease-in;
+}
+
+.togged{
+  border: inset white ;
+  border-style: ridge;
+}
